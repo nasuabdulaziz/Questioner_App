@@ -6,10 +6,32 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> %>
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        <%= link_to("Questioner", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <%= link_to("Signup", "#") %>
+        </li>
+       <li>
+          <%= link_to("Login", "#") %>
+        </li>
+       <!--  <li>
+          <%= link_to("New post", "/posts/new") %>
+        </li>
+        <li>
+          <%= link_to("Users", "/users/index") %>
+        </li> -->
+        <!-- Add a link to the "Sign up" page -->
+        
+        
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>
